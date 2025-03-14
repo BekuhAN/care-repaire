@@ -1,9 +1,60 @@
 .header {
+  background: #f3f1f2;
+  .dark {
+    background: #0a0a0a;
+    color: #fff;
+  }
+  &__logo {
+    height: 100px;
+    padding: 10px 0;
+    img {
+      height: 100%;
+    }
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      &__title {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: #78747c;
+      }
+      &__value {
+        font-size: 18px;
+        font-weight: 700;
+      }
+    }
+  }
   &__nav {
+    height: 60px;
+    display: flex;
+    align-items: center;
     &__list {
       display: flex;
       align-items: center;
       gap: 30px;
     }
+    &__link {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+  &__btn {
+    text-transform: uppercase;
+    font-weight: 700;
   }
 }
