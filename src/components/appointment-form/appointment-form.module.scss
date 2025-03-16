@@ -1,0 +1,48 @@
+.appointment_form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: row;
+  gap: 30px;
+  input {
+    padding-left: 50px;
+    color: #000;
+    height: 60px;
+    &::placeholder {
+      color: #000;
+    }
+  }
+  button {
+    height: 60px;
+    &[type="submit"] {
+      text-transform: uppercase;
+      font-weight: 700;
+      width: 200px;
+    }
+  }
+  textarea {
+    padding-left: 50px;
+    padding-top: 15px;
+    resize: none;
+    &::placeholder {
+      color: #000;
+    }
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    color: transparent;
+    background: none;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__span {
+    grid-column: span 2;
+  }
+  &__icon {
+    color: #eb3300;
+    &__chat {
+      align-self: start;
+      padding-top: 15px;
+    }
+  }
+}
