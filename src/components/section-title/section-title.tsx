@@ -14,7 +14,12 @@ export default function SectionTitle({
   position,
 }: Props): ReactElement {
   return (
-    <div className={clsx(styles.section_title, position && `${position}`)}>
+    <div
+      className={clsx(
+        styles.section_title,
+        position && styles[`section_title__${position}`]
+      )}
+    >
       <h3 className={styles.section_title__sub}>
         <span className={styles.section_title__sub__icon}></span>
         {subtitle}

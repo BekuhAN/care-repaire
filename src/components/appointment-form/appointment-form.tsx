@@ -17,9 +17,11 @@ import {
 import { Icon } from "@iconify/react";
 import clsx from "clsx";
 import emailjs from "@emailjs/browser";
+import { useCategories } from "../../data-access/categories/use-categories";
 
 export default function AppointmentForm(): ReactElement {
   const formRef = useRef<HTMLFormElement | null>(null);
+  const categories = useCategories();
 
   const sendEmail = (e: FormEvent) => {
     //meezig@bvioc.vip
@@ -114,11 +116,15 @@ export default function AppointmentForm(): ReactElement {
           </SelectAction>
           <SelectContent>
             <SelectGroup>
-              <SelectLabel>Услуги</SelectLabel>
-              <SelectItem value="jd">John Doe</SelectItem>
-              <SelectItem value="am">Alex Mack</SelectItem>
-              <SelectItem value="gb">Gordon Brown</SelectItem>
-              <SelectItem value="jc">Jimmie Crawford</SelectItem>
+              <SelectLabel>
+                <strong>Услуги </strong>
+              </SelectLabel>
+              {categories.length > 0 &&
+                categories.map((category) => (
+                  <SelectItem key={category.id} value={category.title}>
+                    {category.title}
+                  </SelectItem>
+                ))}
             </SelectGroup>
           </SelectContent>
         </Select>
