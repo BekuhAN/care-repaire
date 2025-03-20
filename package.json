@@ -17,6 +17,8 @@
     "autoprefixer": "^10.4.21",
     "axios": "^1.8.3",
     "clsx": "^2.1.1",
+    "embla-carousel-autoplay": "^8.5.2",
+    "embla-carousel-class-names": "^8.5.2",
     "json-server": "^1.0.0-beta.3",
     "keep-react": "^1.6.1",
     "phosphor-react": "^1.4.1",

@@ -1,0 +1,22 @@
+.page_title {
+  padding: 100px 0;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../assets/page-title.webp") no-repeat center center;
+  background-size: 100% auto;
+  &__main {
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: capitalize;
+  }
+  &__breadcrumb {
+    display: flex;
+    font-weight: 700;
+    gap: 10px;
+    &__item {
+      &:last-child {
+        color: #eb3300;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.statistic {
+  padding: 100px 0;
+  background: url("../../assets/statistic-bg.webp") no-repeat right top,
+    url("../../assets/road_shape.webp") no-repeat left top, #f3f1f2;
+  h2 {
+    width: 60%;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+  }
+  &__item {
+    padding: 50px;
+    background-image: url("../../assets/pattern_bg.webp");
+    background-color: #0a0a0a;
+    color: #fff;
+    &__icon {
+      background: #eb3300;
+      display: inline-block;
+      border-radius: 50%;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    &__value {
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 1.1;
+    }
+    &__title {
+        font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.categories_item {
+  $this: &;
+  &:hover {
+    #{$this}__image {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 260px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      transition: all 0.3s ease;
+    }
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    background: #fff;
+  }
+  &__icon {
+    flex: 0 0 100px;
+    height: 100px;
+    padding: 10px;
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: 800;
+    background: #eb3300;
+    height: 100px;
+    width: 100%;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  &__link {
+    background: #f3f1f2;
+    height: 80px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+    transition: all 0.3s ease;
+    gap: 10px;
+    &:hover {
+      color: #eb3300;
+    }
+  }
+}

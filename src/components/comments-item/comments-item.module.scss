@@ -1,0 +1,51 @@
+.comments_item {
+  position: relative;
+  padding-top: 75px;
+  &__author {
+    &__image {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      width: 150px;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    &__name {
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        height: 120px;
+        background: #eb3300;
+        color: #fff;
+    }
+  }
+  &__quote {
+    position: absolute;
+    background: #eb3300;
+    padding: 10px;
+    top: 112px;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+  }
+  &__text {
+    padding: 130px 40px 40px;
+    background: #fff;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #4b4b4b;
+  }
+}

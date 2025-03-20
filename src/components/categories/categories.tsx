@@ -1,17 +1,18 @@
 import { ReactElement } from "react";
 import styles from "./categories.module.scss";
 import SectionTitle from "../section-title/section-title";
+import autoPlay from "embla-carousel-autoplay";
 import {
   Carousel,
   CarouselButtons,
   CarouselControl,
-  CarouselIndicators,
   CarouselItem,
   CarouselNextButton,
   CarouselPrevButton,
   CarouselSlides,
 } from "keep-react";
 import { useCategories } from "../../data-access/categories/use-categories";
+import CategoriesItem from "../categories-item/categories-item";
 
 export default function Categories(): ReactElement {
   const categories = useCategories();
@@ -25,23 +26,31 @@ export default function Categories(): ReactElement {
           position="center"
         />
         <div className={styles.categories__list}>
-          <Carousel options={{ slidesToScroll: 2 }}>
+          <Carousel
+            options={{ loop: true }}
+            plugins={[autoPlay()]}
+            className={styles.categories__inner}
+          >
             <CarouselSlides className="flex">
               {categories.length > 0 &&
                 categories.map((item) => (
-                  <CarouselItem key={item.id} className="flex-[0_0_50%]">
-                    <div className="">
-                      <h1 className="">{item.title}</h1>
-                    </div>
+                  <CarouselItem
+                    key={item.id}
+                    className={styles.categories__item}
+                  >
+                    <CategoriesItem item={item} />
                   </CarouselItem>
                 ))}
             </CarouselSlides>
-            <CarouselControl>
-              <CarouselButtons>
-                <CarouselPrevButton />
-                <CarouselNextButton />
+            <CarouselControl className={styles.categories__control}>
+              <CarouselButtons className={styles.categories__buttons}>
+                <CarouselPrevButton
+                  className={styles.categories__buttons__item}
+                />
+                <CarouselNextButton
+                  className={styles.categories__buttons__item}
+                />
               </CarouselButtons>
-              <CarouselIndicators />
             </CarouselControl>
           </Carousel>
         </div>

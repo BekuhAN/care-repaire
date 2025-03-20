@@ -25,72 +25,86 @@
     {
       "id": 1,
       "title": "Техническое обслуживание",
-      "image": "cat-1.png"
+      "icon": "cat-1.png",
+      "image": "service-1.jpg"
     },
     {
       "id": 2,
       "title": "Замена масла и жидкостей",
-      "image": "cat-2.png"
+      "icon": "cat-2.png",
+      "image": "service-6.jpg"
     },
     {
       "id": 3,
       "title": "Диагностика автомобиля",
-      "image": "cat-3.png"
+      "icon": "cat-3.png",
+      "image": "service-11.jpg"
     },
     {
       "id": 4,
       "title": "Ремонт ходовой части",
-      "image": "cat-4.png"
+      "icon": "cat-4.png",
+      "image": "service-16.jpg"
     },
     {
       "id": 5,
       "title": "Ремонт тормозной системы",
-      "image": "cat-5.png"
+      "icon": "cat-5.png",
+      "image": "service-21.jpg"
     },
     {
       "id": 6,
       "title": "Ремонт рулевого управления",
-      "image": "cat-6.png"
+      "icon": "cat-6.png",
+      "image": "service-26.jpg"
     },
     {
       "id": 7,
       "title": "Сход-развал",
-      "image": "cat-7.png"
+      "icon": "cat-7.png",
+      "image": "service-29.jpg"
     },
     {
       "id": 8,
       "title": "Ремонт системы охлаждения",
-      "image": "cat-8.png"
+      "icon": "cat-8.png",
+      "image": "service-32.jpg"
     },
     {
       "id": 9,
       "title": "Ремонт топливной системы",
-      "image": "cat-9.png"
+      "icon": "cat-9.png",
+      "image": "service-35.jpg"
     },
     {
       "id": 10,
       "title": "Ремонт двигателя",
-      "image": "cat-10.png"
+      "icon": "cat-10.png",
+      "image": "service-38.jpg"
     },
     {
       "id": 11,
       "title": "Ремонт трансмиссии",
-      "image": "cat-11.png"
+      "icon": "cat-11.png",
+      "image": "service-41.jpg"
     },
     {
       "id": 12,
       "title": "Ремонт автоэлектрики",
-      "image": "cat-12.png"
+      "icon": "cat-12.png",
+      "image": "service-44.jpg"
     },
     {
       "id": 13,
       "title": "Обслуживание кондиционера",
-      "image": "cat-13.png"
+      "icon": "cat-13.png",
+      "image": "service-47.jpg"
     },
     {
       "id": 14,
       "title": "Ремонт выхлопных систем",
-      "image": "cat-14.png"
+      "icon": "cat-14.png",
+      "image": "service-50.jpg"
     }
   ],
   "services": [
@@ -1311,6 +1325,70 @@
           "price": 1800
         }
       ]
+    }
+  ],
+  "team": [
+    {
+      "id": 1,
+      "name": "Иванов Алексей",
+      "image": "team_1.webp",
+      "position": "механик"
+    },
+    {
+      "id": 2,
+      "name": "Петров Сергей",
+      "image": "team_2.webp",
+      "position": "слесарь"
+    },
+    {
+      "id": 3,
+      "name": "Смирнов Дмитрий",
+      "image": "team_3.webp",
+      "position": "моторист"
+    },
+    {
+      "id": 4,
+      "name": "Васильев Евгений",
+      "image": "team_4.webp",
+      "position": "техник-диагност"
+    },
+    {
+      "id": 5,
+      "name": "Козлов Андрей",
+      "image": "team_5.webp",
+      "position": "электрик"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "author": "Иванов Алексей",
+      "image": "author-1.jpg",
+      "text": "Огромное спасибо автомастерской за отличный ремонт моего автомобиля! Работа выполнена качественно и в срок."
+    },
+    {
+      "id": 2,
+      "author": "Петрова Мария",
+      "image": "author-4.jpg",
+      "text": "Очень довольна сервисом и профессионализмом сотрудников. Рекомендую эту мастерскую всем своим друзьям!"
+    },
+    {
+      "id": 3,
+      "author": "Смирнов Дмитрий",
+      "image": "author-2.jpg",
+      "text": "Здесь работают настоящие профессионалы своего дела. Ремонт выполнен на высшем уровне, все объяснили и показали."
+    },
+    {
+      "id": 4,
+      "author": "Васильев Евгений",
+      "image": "author-3.jpg",
+      "text": "Быстро и качественно отремонтировали мою машину. Очень доволен результатом и обязательно вернусь снова!"
+    },
+    {
+      "id": 5,
+      "author": "Козлова Анна",
+      "image": "author-5.jpg",
+      "text": "Отличная автомастерская с вежливым персоналом и доступными ценами. Всем рекомендую!"
     }
   ]
 }
