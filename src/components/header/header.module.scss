@@ -58,3 +58,19 @@
     font-weight: 700;
   }
 }
+
+.modal {
+  &__content {
+    min-width: 600px;
+    &__inner {
+      padding: 50px;
+    }
+    &__title {
+      font-size: 40px;
+      text-transform: capitalize;
+      font-weight: 800;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  }
+}

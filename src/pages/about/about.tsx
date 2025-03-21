@@ -2,6 +2,9 @@ import { ReactElement } from "react";
 import styles from "./about.module.scss";
 import clsx from "clsx";
 import PageTitle from "../../components/page-title/page-title";
+import Team from "../../components/team/team";
+import Statistic from "../../components/statistic/statistic";
+import Comments from "../../components/comments/comments";
 
 export default function About(): ReactElement {
   return (
@@ -88,6 +91,9 @@ export default function About(): ReactElement {
             </p>
           </div>
         </div>
+        <Team />
+        <Statistic />
+        <Comments />
       </main>
     </>
   );

@@ -4,8 +4,17 @@ import Logo from "../../assets/logo.png";
 import { useNavigate } from "../../data-access/navigate/use-navigate";
 import styles from "./header.module.scss";
 import clsx from "clsx";
-import { Button } from "keep-react";
+import {
+  Button,
+  Modal,
+  ModalAction,
+  ModalContent,
+  ModalDescription,
+  ModalHeader,
+  ModalTitle,
+} from "keep-react";
 import { Icon } from "@iconify/react";
+import AppointmentForm from "../appointment-form/appointment-form";
 
 export default function Header(): ReactElement {
   const navList = useNavigate();
@@ -72,9 +81,23 @@ export default function Header(): ReactElement {
                 ))}
             </ul>
           </nav>
-          <Button className={styles.header__btn} color="primary">
-            Записаться
-          </Button>
+          <Modal>
+            <ModalAction asChild>
+              <Button className={styles.header__btn} color="primary">
+                Записаться
+              </Button>
+            </ModalAction>
+            <ModalContent className={styles.modal__content}>
+              <ModalHeader className={styles.modal__content__inner}>
+                <ModalTitle className={styles.modal__content__title}>
+                  Записаться на прием
+                </ModalTitle>
+                <ModalDescription>
+                  <AppointmentForm />
+                </ModalDescription>
+              </ModalHeader>
+            </ModalContent>
+          </Modal>
         </div>
       </div>
     </header>

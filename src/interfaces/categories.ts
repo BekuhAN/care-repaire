@@ -5,5 +5,5 @@ export interface Categories extends BaseModel  {
     title: string;
     icon: string;
     image: string;
-    services?: Array<Services>;
+    services: Array<Services>;
   }

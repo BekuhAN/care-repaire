@@ -2,6 +2,7 @@ import { ReactElement } from "react";
 import { Categories } from "../../interfaces/categories";
 import styles from "./categories-item.module.scss";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import { Link } from "react-router-dom";
 
 interface Props {
   item: Categories;
@@ -19,14 +20,14 @@ export default function CategoriesItem({ item }: Props): ReactElement {
         </div>
         <h3 className={styles.categories_item__title}>{item.title}</h3>
       </div>
-      <div className={styles.categories_item__link}>
+      <Link to="/services" className={styles.categories_item__link}>
         Подробнее{" "}
         <Icon
           icon="material-symbols-light:line-end-arrow-outline-rounded"
           width="35"
           height="35"
         />
-      </div>
+      </Link>
     </div>
   );
 }
